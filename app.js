@@ -18,6 +18,32 @@ class Veiculo {
     get getChassi(){
         return this.#chassi;
     }
+    set setPlaca(placa){
+        this.#placa = placa;
+    }
+    get getPlaca(){
+       return this.#placa; 
+    }
+    set setMarca(marca){
+        this.#marca = marca;
+    }
+
+    get getMarca(){
+        return  this.#marca;
+    }
+    set setModelo(modelo){
+        this.#modelo = modelo;
+    }
+    get getModelo(){
+        return  this.#modelo;
+    }
+    set setAno(ano){
+        this.#ano = ano;
+    }
+    get getAno(){
+        return  this.#ano;
+    }
+        
 }
 
 function cadastrar(){
@@ -31,7 +57,10 @@ function cadastrar(){
 
     document.getElementById("painel").innerHTML = `
     <h1>Veículos Cadastrados</h1>
-    Chassi: ${veiculo.getChassi}
-    
+    Chassi: ${veiculo.getChassi};
+    Placa: ${veiculo.getPlaca};
+    Marca: ${veiculo.getMarca};
+    Modelo: ${veiculo.getModelo};
+    Ano: ${veiculo.getAno};
     `
 }
