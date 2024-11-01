@@ -57,10 +57,10 @@ function cadastrar(){
 
     document.getElementById("painel").innerHTML = `
     <h1>Veículos Cadastrados</h1>
-    Chassi: ${veiculo.getChassi};
-    Placa: ${veiculo.getPlaca};
-    Marca: ${veiculo.getMarca};
-    Modelo: ${veiculo.getModelo};
-    Ano: ${veiculo.getAno};
+    Chassi: ${veiculo.getChassi}; <div></div>
+    Placa: ${veiculo.getPlaca}<div></div>
+    Marca: ${veiculo.getMarca}<div></div>
+    Modelo: ${veiculo.getModelo}<div></div>
+    Ano: ${veiculo.getAno}
     `
 }
